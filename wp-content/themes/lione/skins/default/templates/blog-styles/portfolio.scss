@@ -1,0 +1,114 @@
+/* Blog layout: Portfolio
+------------------------- */
+
+@import "../../../../css/_mixins.scss";
+@import "../../../../css/_theme-vars.scss";
+@import "../../css/_skin-vars.scss";
+.post_layout_portfolio_4 .post_featured.hover_info .post_info .post_title,
+.post_layout_portfolio_4 .post_title {
+	font-size: 24px;
+	line-height: 1.16em;
+}
+.post_layout_portfolio .post_featured.hover_info .post_info .post_title a {
+	display: block;
+}
+.post_layout_portfolio .post_featured {
+	margin-bottom:0;
+}
+.post_layout_portfolio .post_featured[class*="hover_"] {
+	display: block;
+}
+.post_layout_portfolio .post_featured img {
+	width: 100%;
+}
+.post_layout_portfolio {
+	.post_featured.hover_info.post_featured_bg:before {
+		padding-top: 102%;
+	}
+	.post_featured.hover_info .post_info {
+		padding: 26px 40px 20px;
+	}
+	&.post_format_video .post_featured.hover_info.with_thumb .post_video_hover {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+		top: 15px;
+		right: 15px;
+		left: auto;
+		margin: 0;
+		letter-spacing: -5px;
+	}
+	.slider_container.slider_controls_side .slider_controls_wrap > a,
+	.slider_outer_controls_side .slider_controls_wrap > a {
+		margin-left: 30px;
+		margin-right: 30px;
+		width: 34px;
+		height: 34px;
+		line-height: 27px;
+		margin-top: -17px;
+		opacity: 1;
+		&:before {
+			font-size: 6px;
+		}
+	}
+	.swiper-button-next, .swiper-button-prev {
+		margin-top: -17px !important;
+	}
+}
+.post_layout_portfolio_4 {
+	&.post_format_audio {
+		.mejs-horizontal-volume-slider {
+			display: none !important;
+		}
+		.post_info_audio {
+			display: none;
+		}
+	}
+	.post_featured {
+		&.hover_info .post_info{
+			padding: 26px 32px 19px;
+			.post_title .hover-arrow {
+				margin-top: 15px;
+			}
+			.post_descr {
+				margin: 0 0 10px;
+			}
+		}
+	}
+}
+.post_layout_portfolio_3,
+.post_layout_portfolio_4 {
+	&.post_format_audio {
+		.post_featured {
+			.post_audio_author {
+				font-size: 13px;
+			}
+			.post_info_audio .post_audio_title {
+				font-size: 20px;
+				margin-top: 0.1em;
+				margin-bottom: 0.2em;
+			}
+			div.mejs-controls .mejs-time {
+				display: none;
+			}
+		}
+		.mejs-controls {
+			height: 50px;
+			padding: 5px 18px;
+		}
+	}
+	.slider_container.slider_pagination_pos_bottom .swiper-pagination-bullets {
+		display: none;
+	}
+}
+.post_layout_portfolio.sticky:not(.post_layout_custom) {
+	padding: 0;
+	.label_sticky {
+		position: absolute;
+		z-index: 9;
+		top: -12px;
+		right: -12px;
+		border-width: 12px;
+	}
+}

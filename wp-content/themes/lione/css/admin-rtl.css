@@ -1,0 +1,127 @@
+.lione_options_item[class*="column-"] {
+	padding: 1.25em 0 1.25em 2em;
+}
+.lione_list_choice_item {
+	margin-left: 20px;
+	margin-right: 0;
+}
+.lione_options_header {
+	margin: 1em 0 0 20px;
+}
+.lione_options_title {
+	float: right;
+}
+.lione_options_item_info {
+	border-right: 0 !important;
+}
+.lione_options_item_title {
+	padding-left: 30px;
+	padding-right: 0;
+}
+.lione_options_item_info .lione_options_item_title,
+[class*="lione_column-"] .lione_options_item_title,
+[class*="lione_column-"] .lione_options_item_data {
+	text-align: right;
+}
+.lione_range_slider_value {
+	margin-left: 10px !important;
+	margin-right: 0 !important;
+}
+.lione_options_buttons {
+	float: left;
+	text-align: left;
+}
+.lione_options .lione_options_button:before {
+	margin: -1px 0 0 0.3em;
+}
+div.lione_tabs_vertical > ul.ui-tabs-nav > li.ui-state-active {
+	border-right: 3px solid #11a0d2;
+	border-left: 0;
+}
+div.lione_tabs_vertical > ul.ui-tabs-nav > li.ui-state-active > a.ui-tabs-anchor {
+	right: 1px;
+	left: auto;
+	padding-right: 10px;
+	padding-left: 13px;
+}
+div.lione_tabs > ul.ui-tabs-nav > li > a > i[class*="dashicons-"],
+div.lione_tabs > ul.ui-tabs-nav > li > a > i[class*="icon-"] {
+	margin: 0 0 0 0.5em;
+}
+div.lione_tabs_vertical > ul.ui-tabs-nav > li.lione_tabs_title_super > a.ui-tabs-anchor {
+	padding-left: 2em;
+	padding-right: 13px;
+}
+div.lione_tabs_vertical > ul.ui-tabs-nav > li.lione_tabs_title_super:after {
+	content: '\e858';
+	left: 12px;
+	right: auto;
+}
+div.lione_tabs_vertical > ul.ui-tabs-nav > li.lione_tabs_title_sub > a.ui-tabs-anchor,
+div.lione_tabs_vertical > ul.ui-tabs-nav > li.lione_tabs_title_sub.ui-state-active > a.ui-tabs-anchor {
+	padding: 0.6em 2.95em 0.6em 0.6em;
+}
+.lione_range_slider_units {
+	margin-right: -8px;
+	margin-left: 0;
+}
+.lione_options_item_radio .lione_options_item_holder,
+.lione_options input[type="radio"] + .lione_options_item_holder {
+	margin-left: 0.5em;
+	margin-right: 0;
+}
+.lione_options_item_radio .lione_options_item_label {
+	margin: 0 0 0 1em;
+}
+.lione_checklist.lione_sortable .lione_checklist_item_label {
+	padding: 6px 6px 6px 2.5em;
+}
+.lione_options_item_checkbox input[type="checkbox"],
+.lione_options_item_checklist input[type="checkbox"] {
+	margin-left: 0.5em;
+	margin-right: 0;
+}
+.lione_options_item_checkbox input[type="checkbox"]:checked:before,
+.lione_options_item_checklist input[type="checkbox"]:checked:before {
+	right: 50%;
+	left: auto;
+	-webkit-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+}
+.lione_checklist.lione_sortable .lione_checklist_item_label:after {
+	left: 12px;
+	right: auto;
+}
+.lione_scheme_editor_scheme {
+	padding-left: 105px;
+	padding-right: 0;
+}
+.lione_scheme_editor_controls {
+	left: 0;
+	right: auto;
+}
+.lione_scheme_editor_control {
+	margin-right: 2px;
+	margin-left: 0;
+}
+.lione_options_inherit_off .lione_options_inherit_lock {
+	left: 4px;
+	right: auto;
+}
+.lione_options_inherit_lock {
+	left: 2px;
+	right: auto;
+}
+.lione_options_item_image .lione_media_selector,
+.lione_options_item_media .lione_media_selector,
+.lione_options_item_audio .lione_media_selector,
+.lione_options_item_video .lione_media_selector {
+	float: none !important;
+}
+
+@media (min-width: 601px) {
+	.lione_options_header.sticky {
+		margin: 0 -20px 0 0;
+	}
+}
