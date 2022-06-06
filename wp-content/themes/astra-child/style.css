@@ -10,7 +10,6 @@ Text Domain: astra-child
 Template: astra
 */
 
-
-.web_name span{
-    color:red;
+.ulisting-form-gruop > label:first-child{
+    font-weight:bold;
 }
