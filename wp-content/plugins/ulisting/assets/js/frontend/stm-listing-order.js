@@ -2,7 +2,7 @@ Vue.component('stm-listing-order', {
 	data: function(){
 		return {
 			selected: null,
-			first_change: false,
+			first_change: true,
 		}
 	},
 	mounted() {
