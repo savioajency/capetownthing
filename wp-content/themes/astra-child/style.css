@@ -13,3 +13,7 @@ Template: astra
 .ulisting-form-gruop > label:first-child{
     font-weight:bold;
 }
+
+.attribute_contact_email{
+    display:none;
+}
