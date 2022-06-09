@@ -79,3 +79,21 @@ function fetch_website_link_by_id($post_id){
     
     return $website_link;
 }
+
+//exclude single listing post type from sitemap
+add_filter('wp_sitemaps_posts_query_args', 'disable_sitemap_for_listing_cpt', 10, 2);
+function disable_sitemap_for_listing_cpt($args, $post_type) {
+    
+    if ($post_type !== 'listing') {
+        return $args; 
+    }
+}
+
+
+add_action('wp_head', 'noindex_for_listing');
+function noindex_for_listing(){
+    if ( is_singular( 'listing' ) ) {
+        echo '<meta name="robots" content="noindex, follow">';
+    }
+}
+
